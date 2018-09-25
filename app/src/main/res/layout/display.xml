@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".display">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtDisplay"
+            android:layout_width="359dp"
+            android:layout_height="380dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:textColor="#ff3d00"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Search"
+            android:textColor="#ff3d00"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtSearch"
+            android:background="#ffff00"
+            android:textColor="#ff3d00"
+            android:onClick="btnSear"
+            android:text="Serach" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtDisplay"
+            android:layout_below="@+id/txtDisplay"
+            android:background="#ffff00"
+            android:textColor="#ff3d00"
+            android:layout_marginTop="-76dp"
+            android:onClick="logout"
+            android:text="Logout" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

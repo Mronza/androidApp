@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/uName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="#e00032"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <EditText
+            android:id="@+id/pword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="#e00032"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="219dp" />
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/windowAnimationStyle"
+            android:layout_width="216dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/pword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="224dp"
+            android:background="#ffff00"
+            android:fadeScrollbars="true"
+            android:onClick="Butt"
+            android:text="Login"
+            android:textColor="#ff3d00"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/uName"
+            android:layout_below="@+id/button"
+            android:autoLink="all"
+            android:clickable="true"
+            android:onClick="regis"
+            android:text="Register"
+            android:textColor="#ff3d00"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/register"
+            android:layout_below="@id/button"
+            android:layout_marginStart="98dp"
+            android:text="Are you Registered?"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="158dp"
+            android:layout_height="208dp"
+            android:layout_alignTop="@+id/register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            app:srcCompat="@drawable/unnamed" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
